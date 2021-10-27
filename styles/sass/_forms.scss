@@ -1,0 +1,160 @@
+// styling for form on blog page
+
+
+
+
+
+
+
+
+
+// styling for form on contact page//
+.form-container h3 {
+    padding: 30px 0px;
+    color: $secondary-black;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.form-input,
+.contact-form {
+    width: calc(50% - 12px);
+    input {
+        width: 100%;
+    }
+}
+
+.website-form,
+.comment-form,
+.button-form {
+    width: 100%;
+    input,
+    textarea {
+        width: 100%;
+    }
+}
+
+.form-name,
+.form-input,
+.contact-form,
+.website-form,
+.button-form button {
+    background: $secondary-white;
+    border: none;
+    font-family: $secondary-font;
+    font-weight: 600;
+    color: $third-black;
+    padding: 6px;
+}
+
+.button-form button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-family: $primary-font;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: $primary-green;
+    text-transform: uppercase;
+    padding: 30px 0px;
+}
+
+.fa-long-arrow-alt-right {
+    padding-left: 10px;
+}
+
+.page-wrapper {
+    display: flex;
+    padding-left: 20%;
+}
+
+.side-bar-container {
+    h4{
+        color: $secondary-black;
+        width: 50%;
+        padding-left: 25px;
+    }
+    p{
+        width: 50%;
+        padding-left: 25px;
+    }
+}
+
+.side-bar-background {
+    background-color: $secondary-white;
+    padding-top: 40px;
+}
+
+.form {
+    padding: 90px 30px;
+}
+
+.contact-details,
+.working-hours,
+.contact-info {
+    color: $third-black;
+    
+}
+.contact-details {
+    h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    } 
+    p {
+        font-family: $secondary-font;
+        color: $third-black;
+        font-size: .7rem;
+        font-weight: 800;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+    }
+}
+
+.working-hours p,
+.contact-info p {
+    font-family: $secondary-font;
+    color: $gray;
+    font-size: .7rem;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+span {
+    font-family: $primary-font;
+    color: $secondary-black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.span-p {
+    font-size: 1rem;
+}
+
+.light-p {
+    color: $gray;
+}
+
+.image-2-wrapper {
+    display: block;
+    width: 100%;
+    margin: 0;
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+
+
+
