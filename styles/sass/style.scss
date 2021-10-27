@@ -647,7 +647,11 @@ li:last-child {
     }
 }
 
-.delicious-text,
+.delicious-text{
+    width: 35%;
+    padding-right: 20px;
+    padding-left: 0;
+}
 .recent-posts-text,
 .subscribe {
     width: 35%;

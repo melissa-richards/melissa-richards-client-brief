@@ -186,43 +186,41 @@
             </div>
 
             <!-- contact form starts here -->
-            <div class="form wrapper">
-                <div class="form-container">
+            <div class="blog-form-container wrapper">
+                <div class="blog-form-container">
                     <h4>leave a comment</h4>
                     <p>Your email address will not be published. Required fields are marked*</p>
                 </div>
-                <form id="contact-form" class="wrapper">
-                    <div class="name-email-web">
-                        <label for="Name" class="form-label"></label>
-                        <div class="form-input">
-                            <input type="text" id="Name" name="Name" value="Name*" class="form-name" required>
+                
+                    <div class="blog-form-wrapper">
+                        <div class="blog-form-container">
                         </div>
-                        <div class="contact-form">
-                            <label for="Email" class="form-label"></label>
-                            <div class="form-input">
-                                <input type="email" id="Email" name="Email" value="Email*" class="form-input" required>
+                        <form id="blog-contact-form" class="wrapper">
+                            <div class="blog-info">
+                                <div class="blog-form-input">
+                                    <!-- <label for="Name" class="form-label">Name*</label> -->
+                                    <input type="text" id="Name" name="Name" class="blog-form-name" placeholder="Name*" required>
+                                </div>
+                                <div class="blog-contact-form">
+                                    <!-- <label for="Email" class="form-label">Email*</label> -->
+                                    <input type="email" id="Email" name="Email" class="blog-form-input" placeholder="Email*" required>
+                                </div>
+                                <div class="blog-website-form">
+                                    <!-- <label for="Website" class="form-label">Your Website</label> -->
+                                    <input type="email" id="Website" name="Website" class="blog-form-input" placeholder="Website">
+                                </div>
                             </div>
-                        </div>
-                        <div class="website-form">
-                            <label for="web" class="form-label"></label>
-                            <div class="form-input">
-                                <input type="web" id="web" name="web" value="Your Website "class="form-input">
-                            </div>
-                        </div>
-                        </div>
-                        <div class="comment-form">
-                            <label for="Comment" class="comment-label">Comment</label>
-                            <div class="form-input">
+                            <div class="comment-form">
+                                <!-- <label for="Comment" class="comment-label">Comment</label> -->
                                 <textarea id="Comment" name="Comment" class="contact-form" rows="10" maxlength="3000"
-                                    required></textarea>
+                                    placeholder="Comment" required></textarea>
                             </div>
-                            <div class="contact-form">
+                            <div class="submit-button-form">
                                 <button type="submit" id="contact-button"
-                                    class="contact-btn contact-btn-primary contact-btn-lg contact-btn-block">submit
-                                    comment</button>
+                                    class="submit">submit comment</button>
                             </div>
-                        </div>
-                </form>
+                        </form>
+                    </div>
             </div>
         </div>
 

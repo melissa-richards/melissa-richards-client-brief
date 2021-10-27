@@ -1,3 +1,43 @@
+.submit {
+  background: none;
+  color: #F6F6F6;
+  border: none;
+  padding: 20px 23px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 0.8rem;
+  background-color: #70a402;
+  text-transform: uppercase;
+}
+
+.blog-form-container {
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+.blog-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blog-info div {
+  width: 33%;
+}
+
+.blog-contact-form,
+.blog-website-form,
+.blog-form-input,
+.blog-form-name {
+  width: 100%;
+  padding: 20px 20px;
+}
+
 .form-container h3 {
   padding: 30px 0px;
   color: #353333;
@@ -865,7 +905,12 @@ li:last-child {
   border-bottom: none;
 }
 
-.delicious-text,
+.delicious-text {
+  width: 35%;
+  padding-right: 20px;
+  padding-left: 0;
+}
+
 .recent-posts-text,
 .subscribe {
   width: 35%;
