@@ -1,3 +1,4 @@
+// STYLING FOR HOME PAGE
 // wrapper
 .menu {
     display: grid;
@@ -117,7 +118,7 @@
 
 .resturant-container {
     position: relative;
-    .logo-abs img{
+    .logo-abs img {
         width: 200px;
         position: absolute;
         display: flex;
@@ -139,8 +140,8 @@
     }
 
     h3 {
-        padding: 80px 0px 10px 0px;
-        font-size: 1.8rem;
+        padding: 80px 0px 0px 0px;
+        font-size: 1.6rem;
         margin: 0;
         color: $secondary-black;
     }
@@ -156,35 +157,86 @@
 .green-line {
     display: flex;
     justify-content: center;
-    width: 60px;
-    height: 4px;
+    width: 55px;
+    height: 3px;
     background: $primary-green;
 }
 
-
-.gallery{
+.gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
 }
 
 .background-outside-wrapper {
-        background-color: $secondary-green;
-    }
+    background-color: $secondary-green;
+}
 
 .quote {
     display: grid;
     place-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 700px;
+    grid-template-rows: 450px;
     text-align: center;
     background-color: $secondary-green;
+    padding-bottom: 50px;
+}
+
+.quote-container {
     position: relative;
-    i {
-    position: absolute;
-    top: 0%;
-    left: 0%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    p {
+        width: 64%;
+        letter-spacing: 0.6px;
+        font-family: $secondary-font;
+        font-style: italic;
+        color: $secondary-black;
+        line-height: 25px;
+    }
+    h3 {
+        padding: 10px 0px 15px 0px;
+        font-size: 1.6rem;
+        margin: 0;
+        color: $secondary-black;
+    }
+    .fa-quote-left {
+        color: white;
+        opacity: 75%;
+        font-size: 2.4rem;
+        position: absolute;
+        top: 35%;
+        left: 13%;
+    }
+    .fa-quote-right {
+        color: white;
+        opacity: 75%;
+        font-size: 2.4rem;
+        position: absolute;
+        top: 70%;
+        left: 83%;
+    }
+    .fa-chevron-left {
+        color: white;
+        opacity: 75%;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 119%;
+        left: 46%;
+    }
+    .fa-chevron-right {
+        color: white;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 119%;
+        left: 52%;
     }
 }
 
-
+.green-line-2 {
+    margin-bottom: 15px;
+    width: 55px;
+    height: 3px;
+    background: $primary-green;
+}

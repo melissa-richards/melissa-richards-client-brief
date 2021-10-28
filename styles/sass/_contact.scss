@@ -1,0 +1,78 @@
+// styling for contact page
+
+.page-wrapper {
+    display: flex;
+    padding-left: 20%;
+}
+
+.side-bar-container {
+    h4 {
+        color: $secondary-black;
+        width: 50%;
+        padding-left: 25px;
+    }
+    p {
+        width: 50%;
+        padding-left: 25px;
+    }
+}
+
+.side-bar-background {
+    background-color: $secondary-white;
+    padding-top: 124px;
+}
+
+.contact-details,
+.working-hours,
+.contact-info {
+    color: $third-black;
+}
+.contact-details {
+    h4 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    p {
+        font-family: $secondary-font;
+        color: $third-black;
+        font-size: 0.7rem;
+        font-weight: 800;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+    }
+}
+
+.working-hours p,
+.contact-info p {
+    font-family: $secondary-font;
+    color: $gray;
+    font-size: 0.7rem;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+span {
+    font-family: $primary-font;
+    color: $secondary-black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.span-p {
+    font-size: 1rem;
+}
+
+.light-p {
+    color: $gray;
+}
+
+.image-2-wrapper {
+    display: block;
+    width: 100%;
+    margin: 0;
+    img {
+        width: 100%;
+        display: block;
+    }
+}
