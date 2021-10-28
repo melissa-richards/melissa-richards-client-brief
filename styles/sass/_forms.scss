@@ -2,44 +2,67 @@
 
 .submit {
     background: none;
-	color: $primary-white;
-	border: none;
-	padding: 20px 23px;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+    color: $primary-white;
+    border: none;
+    padding: 20px 23px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
     font-family: $primary-font;
     font-weight: 800;
-    font-size: .8rem;
+    font-size: 0.8rem;
     background-color: $primary-green;
     text-transform: uppercase;
 }
 
+.submit-button-form {
+    padding-bottom: 20%;
+}
 
 .blog-form-container {
     max-width: 100%;
-    margin-top: 30px;
-
-}
-
-.blog-info {
-    display:flex;
-    justify-content: space-between;
-    div {
-        width:33%;
+    margin-top: 35px;
+    h4 {
+        padding-top: 20px;
+    }
+    p {
+    color: $gray;
+    letter-spacing: -.5px;
     }
 }
 
-.blog-contact-form,
-.blog-website-form,
-.blog-form-input,
-.blog-form-name {
-    width: 100%;
-    padding: 20px 20px;
+
+
+.blog-info {
+    display: flex;
+    justify-content: space-between;
+    div {
+        width: 32%;
+    }
 }
 
+.email,
+.name,
+.website {
+    padding: 15px;
+    width: 100%;
+    font-family: $secondary-font;
+}
 
+.blog-contact-form-text {
+    background-color: none;
+    width: 100%;
+    padding: 15px;
+    font-family: $secondary-font;
+}
+.blog-comment-form {
+    padding: 15px 0px;
+}
 
+.blog-form-input {
+    width: 100%;
+    padding-left: 0px;
+}
 
 // styling for form on contact page//
 .form-container h3 {
@@ -47,7 +70,7 @@
     color: $secondary-black;
 }
 
-#contact-form{
+#contact-form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -87,12 +110,12 @@
 
 .button-form button {
     background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
     font-family: $primary-font;
     font-size: 0.95rem;
     font-weight: 700;
@@ -111,12 +134,12 @@
 }
 
 .side-bar-container {
-    h4{
+    h4 {
         color: $secondary-black;
         width: 50%;
         padding-left: 25px;
     }
-    p{
+    p {
         width: 50%;
         padding-left: 25px;
     }
@@ -124,7 +147,7 @@
 
 .side-bar-background {
     background-color: $secondary-white;
-    padding-top: 40px;
+    padding-top: 124px;
 }
 
 .form {
@@ -135,17 +158,16 @@
 .working-hours,
 .contact-info {
     color: $third-black;
-    
 }
 .contact-details {
     h4 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    } 
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
     p {
         font-family: $secondary-font;
         color: $third-black;
-        font-size: .7rem;
+        font-size: 0.7rem;
         font-weight: 800;
         line-height: 24px;
         letter-spacing: 0.3px;
@@ -156,7 +178,7 @@
 .contact-info p {
     font-family: $secondary-font;
     color: $gray;
-    font-size: .7rem;
+    font-size: 0.7rem;
     font-weight: 800;
     line-height: 24px;
     letter-spacing: 0.3px;
@@ -186,8 +208,3 @@ span {
         display: block;
     }
 }
-
-
-
-
-
