@@ -3,6 +3,10 @@
 .page-wrapper {
     display: flex;
     padding-left: 20%;
+    @media (max-width: 1180px) {
+        display: block;
+        padding-left:0;
+        }
 }
 
 .side-bar-container {
@@ -15,17 +19,35 @@
         width: 50%;
         padding-left: 25px;
     }
+    @media (max-width: 1180px) {
+        display: flex;
+        flex-direction: column;
+        }
+    @media (max-width: 320px) {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    } 
 }
+
 
 .side-bar-background {
     background-color: $secondary-white;
     padding-top: 124px;
+    @media (max-width: 1180px) {
+        padding: 25px;
+        margin-right: 3%;
+        margin-left: 3%;
+        }   
 }
+
+
 
 .contact-details,
 .working-hours,
 .contact-info {
     color: $third-black;
+    
 }
 .contact-details {
     h4 {

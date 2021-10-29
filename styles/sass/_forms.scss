@@ -113,7 +113,38 @@
     padding: 6px;
 }
 
-.button-form button {
+.subscribe {
+        button {
+        background: none;
+        color: $primary-white;
+        width: 50px;
+        border: none;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        font-family: $primary-font;
+        font-weight: 400;
+        font-size: 1.5rem;
+        background-color: $primary-green;
+        text-transform: uppercase;
+    }
+        i {
+            padding: 8.5px;
+        }
+}
+
+
+
+
+// footer form styling
+
+.footer-form {
+    // width: 33%;
+    h3 {
+        padding-top: 5px;
+        padding-bottom: 100px;
+    }
+    form {
     background: none;
     color: inherit;
     border: none;
@@ -123,12 +154,44 @@
     outline: inherit;
     font-family: $primary-font;
     font-size: 0.95rem;
-    font-weight: 700;
+    font-weight: 400;
     color: $primary-green;
     text-transform: uppercase;
     padding: 30px 0px;
+    }
+    input {
+        border: none;
+        font-weight:400;
+        font-style: italic;
+        padding-left: 15px;
+    }
+    @media (max-width: 1180px) {
+        display: inline;
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+        .rogue-line {
+            display: none;
+        }
+    }
 }
 
-.fa-long-arrow-alt-right {
-    padding-left: 10px;
+.enter {
+    font-family: $secondary-font;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: $secondary-white;
+    padding: 12px 5px;
+    background-color: $third-black;
+}
+
+.subscribe-flex-cont{
+    display: flex;
+}
+
+.rogue-line {
+    width: 73%;
+    color: $secondary-black;
+    border-top: 0.2px solid $third-black;
 }

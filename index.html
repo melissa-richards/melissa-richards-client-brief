@@ -20,6 +20,7 @@
         <div class="header-container">
             <h1>delicious</h1>
             <nav>
+                <button class="hamburger"><i class="fas fa-bars"></i></button>    
                 <ul class="nav-links">
                     <li>
                         <a href="./home.html">home</a>
@@ -62,11 +63,11 @@
     <main>
         <div class="recipes wrapper">
             <div class="pineapple-chicken">
-                <div class="pineapple-heading">
+                <div class="pineapple-heading wrapper">
                     <h3>pineapple chicken</h3>
                     <p class="post-date">Posted at July 11, 2018 <a href="#">by Admin</a> <a href="#">in Recipes</a></p>
                 </div>
-                <div class="pineapple-chicken-text">
+                <div class="pineapple-chicken-text wrapper">
                     <p>Morbi et accumsan est, non convallis metus. Etiam faucibus, leo et scelerisque facilisis, magna
                         erat dictum nibh, vel
                         congue tortor massa vitae magna.Magna erat dictum nibh, vel congue tortor massa vitae magna.
@@ -91,12 +92,12 @@
                         purslane fennel azuki bean
                         earthnut pea sierra leone bologi leek soko chicory celtuce parsley jicama salsify.</p>
                 </div>
-                <div class="tags">
-                    <div class="tag-list">
+                <div class="tags wrapper">
+                    <div class="tag-list wrapper">
                         <h4>tags:</h4>
                         <p>Recipes, Chicken, Pineapple, Mexican</p>
                     </div>
-                    <div class="share-list">
+                    <div class="share-list wrapper">
                         <h4>share:</h4>
                         <nav>
                             <ul>
@@ -112,7 +113,7 @@
                 </div>
             </div>
             <div class="sally wrapper">
-                <div class="sally-container">
+                <div class="sally-container wrapper">
                     <div class="image-container">
                         <img src="./assets/blog-2.jpeg" alt="Picture of a woman with long blonde hair">
                     </div>
@@ -128,7 +129,7 @@
                 </div>
             </div>
             <div class="realted-posts wrapper">
-                <h4 class="related-h4">related posts</h4>
+                <h4 class="related-h4 wrapper">related posts</h4>
                 <div class="related-posts-container wrapper">
                     <div class="blog-1">
                         <img src="./assets/blog-3.jpeg" alt="hands holding a pink cake on a platter">
@@ -187,7 +188,7 @@
 
             <!-- contact form starts here -->
             <div class="blog-form-container wrapper">
-                <div class="blog-form-container">
+                <div class="blog-form-container wrapper">
                     <h4>leave a comment</h4>
                     <p class="soft-grey-text">Your email address will not be published. Required fields are marked*</p>
                 </div>
@@ -231,7 +232,7 @@
 
     <div class="sub-footer">
         <div class="wrapper">
-            <div class="footer-text">
+            <div class="footer-text wrapper">
                 <div class="delicious-text">
                     <h2>delicious</h2>
                     <p>Soko radicchio bunya nuts gram dulse
@@ -251,12 +252,20 @@
                     <p>Tomato kale radicchio turnip chicory</p>
                     <p>Salsify pea sprouts fava bean</p>
                 </div>
-                <div class="footer-form">
+                <div class="footer-form wrapper">
                     <h3 class="h3">subscribe now</h3>
                     <form class="subscribe" action="mailto:youraddr@domain.tld" method="GET">
-                        <input name="subject" type="text" />
-                        <input aria-label="submit/subscribe" type="submit" value="subscribe" />
+                        <div class="subscribe-flex-cont">
+                            <div>
+                                <input name="subject" class="enter" type="text" value="Enter your email"/>
+                            </div>
+                            <div>
+                                <button type="submit" id="contact-button" class="subscribe"><i class="fas fa-long-arrow-alt-right"></i></button>
+                        
+                        </div>
+                        </div>
                     </form>
+                    <div class="rogue-line"> Enter your email above</div>
                 </div>
             </div>
         </div>

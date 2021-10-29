@@ -20,6 +20,7 @@
         <div class="contact-image-container">
             <h1>delicious</h1>
             <nav>
+                <button class="hamburger"><i class="fas fa-bars"></i></button>
                 <ul class="nav-links">
                     <li>
                         <a href="./home.html">home</a>
@@ -112,7 +113,7 @@
     </div>
 
 <div class="image-2-wrapper">
-    <img src="./assets/contact-2.jpeg" alt="">
+    <img src="./assets/contact-2.jpeg" alt="cut open dragon fruit">
 </div>
 
 
@@ -144,9 +145,17 @@
                 <div class="footer-form">
                     <h3 class="h3">subscribe now</h3>
                     <form class="subscribe" action="mailto:youraddr@domain.tld" method="GET">
-                        <input name="subject" type="text" />
-                        <input aria-label="submit/subscribe" type="submit" value="subscribe" />
+                        <div class="subscribe-flex-cont">
+                            <div>
+                                <input name="subject" class="enter" type="text" value="Enter your email" />
+                            </div>
+                            <div>
+                                <button type="submit" id="contact-button" class="subscribe"><i
+                                        class="fas fa-long-arrow-alt-right"></i></button>
+                            </div>
+                        </div>
                     </form>
+                    <div class="rogue-line"> Enter your email above</div>
                 </div>
             </div>
         </div>

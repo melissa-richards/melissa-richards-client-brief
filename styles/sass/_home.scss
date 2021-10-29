@@ -1,37 +1,80 @@
 // STYLING FOR HOME PAGE
 // wrapper
-.menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 700px);
+.top-row,
+.bottom-row {
+    display: flex;
 }
 
+
+
 // recipes parent
-.recipes-container {
-    max-width: 2000px;
-    display: grid;
-    place-items: center;
-    padding: 20%;
-    margin: 0 auto;
+.menu-container {
+    background-color: $secondary-white;
+    width: 50%;
+    display: flex;
+    padding: 5%;
     h3 {
-        margin-bottom: 0px;
-    }
-    .line {
-        width: 60px;
-        height: 4px;
-        background: $primary-green;
+        font-size: 1rem;
     }
     p {
-        font-family: $secondary-font;
-        color: $third-black;
-        font-size: 0.7rem;
-        font-weight: 800;
-        line-height: 24px;
-        letter-spacing: 0.3px;
-        text-align: center;
-        margin-top: 0;
+        font-size: 0.8rem;
+    }
+    @media (max-width: 1080px){
+    width: 100%;
     }
 }
+
+.recipes-container {
+    width: 50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        margin-top: 4%;
+    }
+    @media (max-width: 1080px){
+    padding: 10%;
+    }
+}
+
+.recipes-container .line {
+    width: 60px;
+    height: 4px;
+    margin-top: 0px;
+    background: $primary-green;
+}
+.recipes-container p {
+    font-family: $secondary-font;
+    color: $third-black;
+    font-size: 0.7rem;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    margin-top: 0;
+    padding: 15px 0px;
+}
+
+@media (max-width: 1080px){
+    
+}
+
+.image-1-container,
+.image-2-container {
+    width: 50%;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    @media (max-width: 1080px){
+    display: none;
+    }
+}
+
 
 .button {
     background: none;
@@ -58,21 +101,22 @@
     outline: inherit;
 }
 
-.menu-container {
-    display: flex;
-    padding: 61px 0px 0px 137px;
-    background-color: $secondary-white;
-    height: 700px;
-}
-
 .menu-container-1,
 .menu-container-2 {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    padding: 20px;
+    // padding: 20px;
     width: 50%;
     display: flex;
     flex-direction: column;
+    @media (max-width: 1080px){
+     padding: 4%;
+}
+}
+
+.menu-container-1 {
+    margin-right: 0.5rem;
 }
 
 .vegetarian,
@@ -81,39 +125,28 @@
 .appetizers,
 .drinks,
 .side-dishes {
+    display: flex;
     width: 100%;
-    position: relative;
     color: $secondary-black;
-
+    padding: 3%;
+    h3 {
+        margin: 0;
+    }
     i {
         font-size: 2rem;
-        position: absolute;
-        top: 30px;
-        left: -55px;
+        display: inline;
+        margin-right: 20px;
+        // position: absolute;
+        // top: 30px;
+        // left: -55px;
     }
     p {
-        width: 80%;
         color: $gray;
+        line-height: 1.5rem;
     }
+    @media (max-width: 1080px){
+    padding: 1%;
 }
-
-.image-1-container {
-    background-image: url(../assets/home-2.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    img {
-        display: block;
-        width: 100%;
-    }
-}
-.image-2-container {
-    background-image: url(../assets/home-3.jpeg);
-    object-fit: cover;
-    background-repeat: no-repeat;
-    img {
-        display: block;
-        width: 100%;
-    }
 }
 
 .resturant-container {
@@ -124,6 +157,9 @@
         display: flex;
         left: 677px;
         top: 77px;
+        @media (max-width: 1180px) {
+        display: none;
+        }
     }
 }
 
@@ -133,11 +169,18 @@
     align-items: center;
     text-align: center;
     padding: 183px 183px 120px 183px;
+    @media (max-width: 1180px) {
+        padding: 12px 183px 79px 183px;
+    }
     img {
         width: 70%;
         display: flex;
         justify-content: center;
+        @media (max-width: 1180px) {
+        display: none;
+        }   
     }
+    
 
     h3 {
         padding: 80px 0px 0px 0px;
