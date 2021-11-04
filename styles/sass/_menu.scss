@@ -1,0 +1,70 @@
+// styling for hamburger menu javascript
+@media (max-width: 1180px) {
+    .overlay {
+        display: block;
+        position: fixed;
+        background-color: $primary-white;
+        background: linear-gradient($primary-white, transparent);
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+}
+
+.hide {
+    display:none;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0;
+    @media (max-width: 1180px) {
+        display: none;
+        // display: block;
+        z-index: 1;
+        height: 385px;
+        width: 220px;
+        background-color: $primary-green;
+        opacity: 80%;
+        padding: 5%;
+    }
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.06875rem;
+        font-size: 0.85rem;
+        &:hover,
+        &:focus {
+            color: $primary-green;
+            @media (max-width: 1180px) {
+                color: $primary-black;
+            }
+        }
+        @media (max-width: 1180px) {
+            color: $primary-white;
+        }
+    }
+    li {
+        @media (max-width: 1180px) {
+            padding: 10px;
+        }
+    }
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: $primary-green;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    @media (max-width: 1180px) {
+        z-index: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

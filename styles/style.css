@@ -941,6 +941,92 @@ span {
           justify-content: space-between;
 }
 
+@media (max-width: 1180px) {
+  .overlay {
+    display: block;
+    position: fixed;
+    background-color: #F6F6F6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F6F6F6), to(transparent));
+    background: linear-gradient(#F6F6F6, transparent);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+}
+.hide {
+  display: none;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+}
+@media (max-width: 1180px) {
+  .nav-links {
+    display: none;
+    z-index: 1;
+    height: 385px;
+    width: 220px;
+    background-color: #70a402;
+    opacity: 80%;
+    padding: 5%;
+  }
+}
+.nav-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.06875rem;
+  font-size: 0.85rem;
+}
+.nav-links a:hover, .nav-links a:focus {
+  color: #70a402;
+}
+@media (max-width: 1180px) {
+  .nav-links a:hover, .nav-links a:focus {
+    color: black;
+  }
+}
+@media (max-width: 1180px) {
+  .nav-links a {
+    color: #F6F6F6;
+  }
+}
+@media (max-width: 1180px) {
+  .nav-links li {
+    padding: 10px;
+  }
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: #70a402;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 1180px) {
+  .hamburger {
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -1299,15 +1385,6 @@ textarea {
             flex-direction: row-reverse;
   }
 }
-.header-container a {
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.06875rem;
-  font-size: 0.85rem;
-}
-.header-container a:hover, .header-container a:focus {
-  color: #70a402;
-}
 @media (max-width: 1180px) {
   .header-container {
     background-image: url(../assets/blog-1.jpeg);
@@ -1355,15 +1432,6 @@ textarea {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-}
-.contact-image-container a {
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.06875rem;
-  font-size: 0.85rem;
-}
-.contact-image-container a:hover, .contact-image-container a:focus {
-  color: #70a402;
 }
 @media (max-width: 1180px) {
   .contact-image-container {
@@ -1413,15 +1481,6 @@ textarea {
             flex-direction: row-reverse;
   }
 }
-.home-header-container a {
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.06875rem;
-  font-size: 0.85rem;
-}
-.home-header-container a:hover, .home-header-container a:focus {
-  color: #70a402;
-}
 @media (max-width: 1180px) {
   .home-header-container {
     background-image: url(../assets/home-1.jpeg);
@@ -1430,41 +1489,6 @@ textarea {
     height: 40vh;
     background-size: cover;
     background-position: bottom;
-  }
-}
-
-.nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 0;
-}
-@media (max-width: 1180px) {
-  .nav-links {
-    display: none;
-  }
-}
-
-.hamburger {
-  background-color: transparent;
-  border: 0;
-  color: #70a402;
-  font-size: 2rem;
-  cursor: pointer;
-  display: none;
-}
-@media (max-width: 1180px) {
-  .hamburger {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
   }
 }
 
@@ -1484,6 +1508,20 @@ li:last-child {
   top: 9px;
   left: 6px;
 }
+@media (max-width: 1180px) {
+  .circle {
+    width: 7px;
+    height: 7px;
+    background: #F6F6F6;
+    border: 8px solid #F6F6F6;
+    border-radius: 50%;
+    color: black;
+    font: "Raleway", sans-serif;
+    position: absolute;
+    top: 9px;
+    left: 6px;
+  }
+}
 
 .number-two {
   position: absolute;
@@ -1493,6 +1531,11 @@ li:last-child {
   font-weight: 500;
   font-size: 0.8rem;
   color: #F6F6F6;
+}
+@media (max-width: 1180px) {
+  .number-two {
+    color: #70a402;
+  }
 }
 
 .shopping-bag {

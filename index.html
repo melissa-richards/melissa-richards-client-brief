@@ -17,11 +17,12 @@
 
 <body>
     <header>
+        <div class="overlay hide"></div>
         <div class="header-container">
-            <h1>testing</h1>
-            <nav>
-                <button class="hamburger"><i class="fas fa-bars"></i></button>    
-                <ul class="nav-links">
+            <h1>Delicious</h1>
+            <nav class="nav-bar">
+                <button id="hamburger" class="hamburger"><i class="fas fa-bars"></i></button>    
+                <ul id="menu" class="nav-links">
                     <li>
                         <a href="./home.html">home</a>
                     </li>
@@ -46,7 +47,7 @@
                     <li>
                         <a href="#" class="shopping-bag" aria-label="shopping bag">
                             <i class="fas fa-shopping-bag"></i>
-                            <div class="circle"></div>
+                            <div class="circle white-circle"></div>
                             <div class="number-two">2</div>
                         </a>
                     </li>
@@ -273,6 +274,8 @@
     <footer>
         <p class="wrapper">Copyrights © 2021 by <a href="#" class='polar'>polar</a>. All Rights Reserved.</p>
     </footer>
+
+<script src="./menu.js"></script>
 </body>
 
 </html>
